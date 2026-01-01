@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Browser</title>
+</head>
+
+<body>
+    <label>
+        <input type="checkbox" id="check"> Click me to show hidden message 
+    </label>
+
+    <p id="message" style="display:none;">Hello! I am visible now.</p>
+
+
+    <script>
+        document.getElementById("check").onclick = function() {
+            document.getElementById("message").style.display =
+                this.checked ? "block" : "none";
+        };
+    </script>
+
+</body>
+
+</html>
